@@ -1,0 +1,71 @@
+body {
+	margin: 1em;
+	font-family: monospace;
+	font-size: 12px;
+}
+
+video {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
+
+img {
+  width: 10em;
+	height: 10em;
+	top: 0;
+	left: 0;
+}
+
+.selected1, .selected1Outline {
+	outline-offset: -2px;
+	position: absolute;
+	top: 0;
+	left: 80em;
+}
+
+.selected2, .selected2Outline {
+	/* outline: 2px solid yellow; */
+	outline-offset: -2px;
+	position: absolute;
+	top: 0;
+	left: 90em;
+}
+
+.selected1Outline, .selected2Outline {
+	outline: 2px solid yellow;
+  width: 10em;
+	height: 10em;
+}
+
+
+textarea, input {
+	display: block;
+	border: 1px solid black;
+	outline: none;
+	width: 50%;
+	margin-bottom: 1em;
+}
+
+input {
+	height: 2em;
+}
+
+#address {
+	height: 6em;
+}
+
+#message {
+	height: 20em;
+}
+
+#submit {
+}

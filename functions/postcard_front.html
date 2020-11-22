@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 6.25in;
+        height: 4.25in;
+        margin: 0;
+        padding: 0;
+        /* background: {{background_color}}; */
+      }
+
+      img {
+        width: 1.8in;
+        height: 1.8in;
+        margin: 1.225in 0 1.225in 0.883in;
+        padding: 0;
+        float: left;
+      }
+
+      #outline {
+        border: 1px solid #0A0A0A;
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6.25in;
+        height: 4.25in;
+        z-index: -1;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id='outline'></div>
+    <img src="{{url0}}">
+    <img src="{{url1}}">
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+
+      body {
+        width: 6.25in;
+        height: 4.25in;
+        margin:0;
+        padding:0;
+        background: {{background_color}};
+        font-family: monospace;
+        font-size: .1in;
+      }
+
+      #left-box {
+        padding: .5in;
+        width: 2in;
+        /* background: blue; */
+        display: inline-block;
+        float: left;
+        color:black;
+        margin: 0;
+        height: 3.75in;
+      }
+
+      #outline {
+        width: 6.25in;
+        height: 4.25in;
+        margin:0;
+        padding:0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background: green; */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id='outline'>
+    <div id="left-box">
+      {{date}}<br><br><br>
+      Dear {{name}},<br><br>
+      {{message}}
+      <br>
+      <br>
+      Yours,<br>
+      LAUREN LEE MCCARTHY
+    </div>
+    <!-- <div id="top-box"></div> -->
+  </div>
+  </body>
+</html>
